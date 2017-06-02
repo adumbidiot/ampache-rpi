@@ -39,7 +39,7 @@ ENV MYSQL_PASS **Random**
 VOLUME  ["/etc/mysql", "/var/lib/mysql"]
 
 # setup apache with default ampache vhost
-ADD 001-ampache.conf /etc/apache2/sites-available/
+ADD ./001-ampache.conf /etc/apache2/sites-available/
 RUN rm -rf /etc/apache2/sites-enabled/*
 RUN ln -s /etc/apache2/sites-available/001-ampache.conf /etc/apache2/sites-enabled/
 RUN a2enmod rewrite
