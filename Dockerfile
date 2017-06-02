@@ -1,7 +1,7 @@
 FROM resin/rpi-raspbian
 
 RUN apt-get update
-RUN apt-get install ampache ampache-themes
+RUN apt-get install ampache ampache-themes apache2
 
 EXPOSE 80
 CMD apache2 -D FOREGROUND
