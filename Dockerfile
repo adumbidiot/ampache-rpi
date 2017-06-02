@@ -4,4 +4,4 @@ RUN apt-get update
 RUN apt-get install ampache ampache-themes
 
 EXPOSE 80
-CMD systemctl start apache2
+CMD service apache2 start
