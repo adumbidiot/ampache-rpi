@@ -7,7 +7,7 @@ FROM resin/rpi-raspbian
 RUN apt-get update
 RUN apt-get -y upgrade
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install wget inotify-tools
-RUN wget -O - https://download.videolan.org/pub/debian/videolan-apt.asc|sudo apt-key add -
+#RUN wget -O - https://download.videolan.org/pub/debian/videolan-apt.asc|sudo apt-key add -
 RUN apt-get update
 
 # Need this environment variable otherwise mysql will prompt for passwords
